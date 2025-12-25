@@ -3,7 +3,7 @@ members = [".", "types", "contest-greeter-dbus"]
 
 [package]
 name = "lightdm-contest-greeter"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 build = "build.rs"
 
