@@ -21,7 +21,7 @@ use crate::{
 async fn main() {
     let config = match get_conf("/etc/lightdm/lightdm-contest-greeter.conf") {
         Ok(config) => config,
-        Err(e) => panic!("failed to read config: {e}"),
+        Err(e) => Conf::default(),
     };
 
     env_logger::Builder::from_env(Env::default().default_filter_or(config.log_level)).init();
