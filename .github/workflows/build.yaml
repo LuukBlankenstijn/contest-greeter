@@ -21,7 +21,6 @@ jobs:
         with:
           name: luukblankenstijn
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
-          cachixArgs: "-v"
 
       - name: Build contest-greeter
         run: nix build .#contest-greeter
